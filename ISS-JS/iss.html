@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+        IDEIAS:
+        DIGITAR UM NUMERO, SELECIONAR A PARCELA RADIO
+        DIGITAR LETRA, SELECIONAR A LADO RADIO
+     -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2ca9804ec8.js" crossorigin="anonymous"></script>
+    <script src="logica.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+
+        <div class="row">
+
+            <div class="colum w3-container w3-pink">
+                <!--   A-R-E-A  -->
+                <div class="divArea divMain">
+                    <label class="lblTitle">
+                        <h2 style="padding: 4px; color:black;"><b>Área</b></h2>
+                    </label>
+                    <input type="number" step="any" id="inpArea" name="area" class="inputArea" min="0" required>
+                    <p class="pMetros" style="display: inline-block;">M²</p>
+                </div>
+
+                <!--    L-A-D-O   -->
+                <div class="divMain">
+                    <label class="lblLado lblTitle" for="">
+                        <h2><b style="color: black;">Lado</b></h2>
+                        <P>
+                            <input class="radioLado radio" type="radio" name="ladoRadio" value="A" required /><b>A</b>
+                            <input class="radioLado radio" type="radio" name="ladoRadio" value="B" required /><b>B</b>
+                        </P>
+                    </label>
+                </div>
+
+                <!--    P-A-R-C-E-L-A   -->
+                <div class="divMain">
+                    <label class="lblTitle" for="" style="display: block;">
+                        <h2 ><b style="color: black;">Parcela</b></h2>
+                        <p class="btnRadio">
+                            <input class="radioParc radio" type="radio" name="parcRadio" value="unica"
+                                required /><b>Única</b>
+                            <input class="radioParc radio" type="radio" name="parcRadio" value="1" required /><b>1</b>
+                            <input class="radioParc radio" type="radio" name="parcRadio" value="2" required /><b>2</b>
+                            <input class="radioParc radio" type="radio" name="parcRadio" value="3" required /><b>3</b>
+                        </p>
+                    </label>
+                </div>
+
+                <!--CHAMANDO STYLESHEET DA ESTILIZAÇÃO DO BOTÃO 'ENVIAR'-->
+                <link rel="stylesheet" href="style-button.css">
+                <div class="divBtn">
+                    <input type="submit" value="CALCULAR" class="button-15 w3-left" name="btnEnviar" id="btnEnviar"
+                        role="button" onclick="calcularIss()">
+                    <button class="btnPlus w3-btn w3-round-large w3-right" onclick="window.location.reload()">
+                        <i class=" w3-xxxlarge fa-solid fa-square-plus"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- TABELA QUE IRÁ RECEBER DADOS ESPECÍFICOS DO BACK-END-->
+            <!--  SÁIDA DE DADOS APÓS CÁLCULOS DE LOGICA.JS-->
+            <div class="colum colum2">
+
+                <div class="divTable" id="tbPrint" style="display: none;">
+                    <p class="tbResultado" style="font-weight: bold; text-shadow: 20px solid black;">RESULTADO</p>
+                    <table class="table ">
+                        <tr class="trStyle">
+                            <td>Área</td>
+                            <td id="tdAreaValor"></td>
+                        </tr>
+                        <tr class="trStyle2">
+                            <td>Lado</td>
+                            <td id="tdLadoValor"></td>
+                        </tr>
+                        <tr class="trStyle">
+                            <td>Parcela</td>
+                            <td id="tdParcValor"></td>
+                        </tr >
+                        <tr class="trStyle2">
+                            <td>Qtd. Tx. Expd.</td>
+                            <td id="tdQtdTxExpValor"></td>
+                        </tr>
+                        <tr class="trStyle">
+                            <td>Tx. Expediente</td>
+                            <td id="tdTxExpValor"></td>
+                        </tr>
+                        <tr class="trStyle2">
+                            <td>ISS parcial</td>
+                            <td id="tdIssParcial"></td>
+                        </tr>
+                        <tr class="trStyleTotal">
+                            <td>ISS TOTAL</td>
+                            <td id="tdIssTotal"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="w3-container w3-bottom">
+            Copyright © 2023 - Calculadora de ISS. Desenvolvido por <a href="https://www.linkedin.com/in/lucas-melo-dev" target="_blank">Lucas Melo</a>. Todos os direitos reservados.</div>
+    </footer>
+</body>
+
+</html>
