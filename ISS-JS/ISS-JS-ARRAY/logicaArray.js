@@ -6,8 +6,13 @@ var inpValorLadoIss = [];
 function teste(){
 
     //ÁREA 
+    /* COMMENT:
+        A array conseguiu receber o input html mas, somente, com uma var unidimensional auxiliar. Agora, a array segue 
+        manipulável.
+    */
     var inpArea = parseFloat(document.getElementById('inpArea').value);
-    var entradaNaArray = inpValorLadoIss.push(inpArea);
-    console.log(entradaNaArray, inpValorLadoIss);
+    var auxArray = inpIss.push(inpArea);
+    console.log('var auxArray: '+auxArray+'  inpValor' inpValorLadoIss);
 }   
+    
     
