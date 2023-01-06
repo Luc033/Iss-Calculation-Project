@@ -189,13 +189,20 @@ b {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    border: 2px solid gray;
+    
+}
 
+thead, th{
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2px;
 }
 
 table,
 tr,
 td {
+    border: 2px solid gray;
     margin-left: auto;
     margin-right: auto;
     font-size: x-large;

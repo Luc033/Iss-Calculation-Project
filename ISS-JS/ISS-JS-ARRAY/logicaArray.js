@@ -43,7 +43,7 @@ function calcularIss() {
     arTotalIss [arTotalIss.length - 1] = arParcialIss [arParcialIss.length - 1] + arValorTxExpIss [arValorTxExpIss.length - 1];
     arTotalIss [arTotalIss.length - 1] = ajuste( arTotalIss [arTotalIss.length - 1],2);
 
-    
+    atualizarTabela('tbody');
     console.log('Id: ' + auxInpArea +  ' | Area entrada: ' + arInpArea[arInpArea.length - 1] + ' | Lado: '+arVarcharLado [arVarcharLado.length-1] + ' ('+ arValorLadoIss[arValorLadoIss.length-1]+') | Parcela: ' + arVarcharParc [arVarcharParc.length-1] +' ('+arValorParcelaIss[arValorParcelaIss.length-1]+') | Tx Exp: '+arValorTxExpIss[arValorTxExpIss.length-1]+ ' | Iss parcial: '+ arParcialIss[arParcialIss.length-1]+' |  Iss Total: ' + arTotalIss[arTotalIss.length-1]);
 
 }
@@ -136,3 +136,34 @@ function valorTxExp() {
 }
 
 
+// FUNÇÃO PARA ATUALZIZAR A TABELA COM DADOS 
+function atualizarTabela(el){
+    let linha = document.createElement('tr');
+    let tdId = document.createElement('td');
+    let tdArea = document.createElement('td');
+    let tdLado = document.createElement('td');
+    let tdParc = document.createElement('td');
+    let tdTxExp = document.createElement('td');
+    let tdIssP = document.createElement('td');
+    let tdIssT = document.createElement('td');
+
+
+    tdId = auxInpArea;
+    tdArea = arInpArea[arInpArea.length - 1]+'M²';
+    tdLado = arVarcharLado[arInpArea.length - 1] + ' ('+arValorLadoIss[arValorLadoIss.length-1]+')';
+    tdParc = 'R$ ' + arValorParcelaIss[arValorParcelaIss.length-1]+' ('+arVarcharParc[arVarcharParc.length-1]+')';
+    tdTxExp = 'R$ ' + arValorTxExpIss[arValorTxExpIss.length-1]+' ('+arVarcharParc[arVarcharParc.length-1]+')';
+    tdIssP = 'R$ '+arParcialIss[arParcialIss.length-1];
+    tdIssT = 'R$ ' + arTotalIss[arTotalIss.length-1];
+
+    linha.appendChild(tdId);
+    linha.appendChild(tdArea);
+    linha.appendChild(tdLado);
+    linha.appendChild(tdParc);
+    linha.appendChild(tdTxExp);
+    linha.appendChild(tdIssP);
+    linha.appendChild(tdIssT);
+
+    document.getElementById(el).appendChild(linha);
+
+}
