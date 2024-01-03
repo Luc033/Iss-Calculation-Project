@@ -28,7 +28,7 @@ main {
 
 
 .w3-container {
-    box-shadow: 10px 5px 5px #ff80b3;
+    box-shadow: 10px 5px 5px #a6bbc7;
     padding: 15px 0 0 0;
     display: flexbox;
 }
@@ -102,8 +102,10 @@ label {
 }
 
 .lblTitle {
-    background-image: linear-gradient(268deg, rgba(255, 105, 180, 1) 4.1%, rgba(255, 174, 215, 1) 74.3%);
+    background-image: linear-gradient(268deg, rgb(74, 74, 109) 4.1%, rgb(158, 158, 158) 74.3%);
     display: block;
+    color: white;
+
 }
 
 .divArea {
@@ -116,7 +118,7 @@ label {
     align-content: flex-end;
     padding-bottom: 15px;
     width: 80%;
-    background-image: linear-gradient(268deg, rgba(255, 105, 180, 1) 4.1%, rgba(255, 174, 215, 1) 74.3%);
+    background-image: linear-gradient(268deg, rgb(74, 74, 109) 4.1%, rgb(158, 158, 158) 74.3%);
 }
 
 .divAreaDemolicao {
@@ -129,7 +131,10 @@ label {
     align-content: flex-end;
     padding-bottom: 15px;
     width: 80%;
-    background-image: linear-gradient(268deg, rgba(255, 105, 180, 1) 4.1%, rgba(255, 174, 215, 1) 74.3%);
+    background-image: linear-gradient(268deg, rgb(247, 159, 159) 4.1%, rgb(255, 221, 221) 74.3%);
+}
+.divAreaDemolicao .lblTitle{
+    background-image: linear-gradient(268deg, rgb(247, 159, 159) 4.1%, rgb(255, 221, 221) 74.3%);
 }
 
 .radio {
