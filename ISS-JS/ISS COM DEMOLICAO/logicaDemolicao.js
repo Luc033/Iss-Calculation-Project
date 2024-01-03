@@ -9,12 +9,12 @@ function mudarEstado(el) {
 
 /// CÁLCULO DA TAXA DE 
 // E-X-P-E-D-I-E-N-T-E
-var TxExpVigente = 57.99;
+var TxExpVigente = 60.78;
 
 // FUNÇÃO QUE IRÁ  CALCULAR O VALOR DO ISS
 var msgConsole = '';
 var msgLblPrint = '';
-let valorTxDemolicao = 71.27;
+let valorTxDemolicao = 74.70;
 function calcularIssDemolicao() {
     // DECLARANDO VARIÁVEL PARA RECEBER O VALOR DO INPUT DE AREA, AO MESMO TEMPO QUE É CONVERTIDO PARA INT.
     var inpArea = parseFloat(document.getElementById('inpArea').value);

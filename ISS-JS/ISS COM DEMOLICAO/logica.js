@@ -11,8 +11,8 @@ function Mudarestado(el) {
 // L-A-D-O
 var valorLadoIss = 0;
 var lado = '';
-var ladoA = 639.78;
-var ladoB = 539.76;
+var ladoA = 747.01;
+var ladoB = 602.37;
 function valorLado() {
     var radios = document.getElementsByName("ladoRadio");
     for (var i = 0; i < radios.length; i++) {
@@ -72,7 +72,7 @@ function valorParcela() {
 
 /// CÁLCULO DA TAXA DE 
 // E-X-P-E-D-I-E-N-T-E
-var TxExpVigente = 57.99;
+var TxExpVigente = 60.78;
 var valorTxExpIss = TxExpVigente;
 function valorTxExp() {
     switch (parc) {
