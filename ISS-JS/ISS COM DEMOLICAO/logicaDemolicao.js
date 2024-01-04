@@ -9,7 +9,7 @@ function mudarEstado(el) {
 
 /// CÁLCULO DA TAXA DE 
 // E-X-P-E-D-I-E-N-T-E
-var TxExpVigente = 60.78;
+var TxExpVigente = 60.79;
 
 // FUNÇÃO QUE IRÁ  CALCULAR O VALOR DO ISS
 var msgConsole = '';
