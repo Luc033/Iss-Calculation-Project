@@ -72,7 +72,7 @@ function valorParcela() {
 
 /// CÁLCULO DA TAXA DE 
 // E-X-P-E-D-I-E-N-T-E
-var TxExpVigente = 60.78;
+var TxExpVigente = 60.79;
 var valorTxExpIss = TxExpVigente;
 function valorTxExp() {
     switch (parc) {
