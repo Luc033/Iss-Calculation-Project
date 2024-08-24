@@ -102,7 +102,6 @@ label {
 }
 
 .lblTitle {
-    background-image: linear-gradient(268deg, rgba(255, 105, 180, 1) 4.1%, rgba(255, 174, 215, 1) 74.3%);
     display: block;
 }
 
@@ -116,7 +115,6 @@ label {
     align-content: flex-end;
     padding-bottom: 15px;
     width: 80%;
-    background-image: linear-gradient(268deg, rgba(255, 105, 180, 1) 4.1%, rgba(255, 174, 215, 1) 74.3%);
 }
 
 .divAreaDemolicao {
@@ -129,7 +127,6 @@ label {
     align-content: flex-end;
     padding-bottom: 15px;
     width: 80%;
-    background-image: linear-gradient(268deg, rgba(255, 105, 180, 1) 4.1%, rgba(255, 174, 215, 1) 74.3%);
 }
 
 .radio {
